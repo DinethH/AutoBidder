@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <settings>
+    <preloader image="images/Filename_34.png" />
+    <userInterface showZoomButtons="false" showToolTips="false" showHotspotsButton="false" showFullScreenButton="false" showTogglePlayButton="false" showArrows="false" toolbarAlign="right" toolbarBackColor="#EFEFEF" toolbarHoverColor="#808285" toolbarForeColor="#A7A9AE" toolbarBackAlpha="0.9" toolbarAlpha="1" flashEmbedFonts="true" progressLoopColor="#e8e8e8" progressNumColor="#949494" showProgressNumbers="true" />
+    <control dragSpeed="0.13" maxZoom="200" maxZoomFullScreen="200" fullScreenStretch="100" doubleClickZooms="false" disableMouseControl="false" reverseScroll="false" />
+    <rotation firstImage="33" rotate="false" rotatePeriod="7" rotateDirection="-1" bounce="false" forceDirection="false" />
+  </settings>
+  <hotspots>
+    <hotspot id="model" absolutePosition="true" className="WebRotate360.ImageRotator.StaticHotspotPresenter" offsetX="4" offsetY="2">
+      <spotinfo src="images/spots/model_a1.png" />
+    </hotspot>
+    <hotspot id="color1" absolutePosition="true" className="WebRotate360.ImageRotator.StaticHotspotPresenter" margin="0,0,5,4" align="bottom,left">
+      <spotinfo>
+        <cdata><![CDATA[
+        <div style="background:#808080; width:17px; height:16px; float:left; border:1px #eeeeee solid" onmouseover="jQuery('#wr360PlayerId').css('background-color','#808080');"></div>
+        <div style="background:#000; width:17px; height:16px; float:left; margin:0 0 0 2px; border:1px #eeeeee solid" onmouseover="jQuery('#wr360PlayerId').css('background-color','#000');"></div>
+        <div style="background:#2F7CBB; width:17px; height:16px; float:left; margin:0 0 0 2px; border:1px #eeeeee solid" onmouseover="jQuery('#wr360PlayerId').css('background-color','#2F7CBB');"></div>
+        <div style="clear:both"></div>
+        ]]></cdata>
+      </spotinfo>
+    </hotspot>
+    <hotspot id="spot_bottom" absolutePosition="true" className="WebRotate360.ImageRotator.StaticHotspotPresenter" margin="1,0,0,0" align="bottom,center">
+      <spotinfo>
+		  <spotinfo src="images/spots/infospotarrow.png" />
+      </spotinfo>
+    </hotspot>
+    <hotspot id="sole" absolutePosition="false" className="WebRotate360.ImageRotator.Html5HotspotPresenter" indicatorImage="spot_shape1.gif" alpha="0.8">
+       <spotinfo>
+        <cdata><![CDATA[<div style="padding:0px 6px 0px 6px; margin:0; line-height:18px; background-color:#ffffff; color: #727272; width:246px; height:206px; border:1px #eeeeee solid; font-family:verdana; font-size:12px; opacity:0.95; " >
+<img src="imagerotator/html/img/basic/infoico.png" style="position:absolute; top:5px; right:7px;"/>
+<p style="font-size:12px; font-weight:bold; color:#666666; padding:5px 0 2px 8px; margin:0; border-bottom:1px dotted #dddddd; text-transform:uppercase">Vans Type II
+</p>
+<p style="padding:2px 0px 2px 8px; margin:0; font-size:10px; border-bottom:1px dotted #dddddd">
+Classic Vans waffle traction outsole
+</p>
+<div style="text-align:center; margin:18px 0 6px 0;">
+<img src="360_assets/SampleShoeStill2/images/spots/vanssolesmall.jpg" width="214" height="103"/>
+</div>
+<div style="float:right; padding:5px"><a href="http://www.facebook.com/360views" target="_blank" style="color:#8B8B8B; text-decoration:none; font-size:11px">Learn more <span style="color:#999999">&raquo;</span></a>
+</div>
+<div style="clear:both"></div></div>]]></cdata>
+      </spotinfo>
+    </hotspot>
+  </hotspots>
+  <images>
+    <image src="images/Filename_01.png">
+      <hotspot source="sole" offsetX="153" offsetY="162" />
+    </image>
+    <image src="images/Filename_02.png">
+      <hotspot source="sole" offsetX="145" offsetY="160" />
+    </image>
+    <image src="images/Filename_03.png">
+      <hotspot source="sole" offsetX="134" offsetY="155" />
+    </image>
+    <image src="images/Filename_04.png">
+      <hotspot source="sole" offsetX="126" offsetY="150" />
+    </image>
+    <image src="images/Filename_05.png">
+      <hotspot source="sole" offsetX="122" offsetY="145" />
+    </image>
+    <image src="images/Filename_06.png">
+      <hotspot source="sole" offsetX="121" offsetY="141" />
+    </image>
+    <image src="images/Filename_07.png" />
+    <image src="images/Filename_08.png" />
+    <image src="images/Filename_09.png" />
+    <image src="images/Filename_10.png" />
+    <image src="images/Filename_11.png" />
+    <image src="images/Filename_12.png" />
+    <image src="images/Filename_13.png" />
+    <image src="images/Filename_14.png" />
+    <image src="images/Filename_15.png" />
+    <image src="images/Filename_16.png" />
+    <image src="images/Filename_17.png" />
+    <image src="images/Filename_18.png" />
+    <image src="images/Filename_19.png" />
+    <image src="images/Filename_20.png" />
+    <image src="images/Filename_21.png" />
+    <image src="images/Filename_22.png" />
+    <image src="images/Filename_23.png" />
+    <image src="images/Filename_24.png" />
+    <image src="images/Filename_25.png" />
+    <image src="images/Filename_26.png" />
+    <image src="images/Filename_27.png" />
+    <image src="images/Filename_28.png" />
+    <image src="images/Filename_29.png">
+      <hotspot source="sole" offsetX="292" offsetY="161" />
+    </image>
+    <image src="images/Filename_30.png">
+      <hotspot source="sole" offsetX="278" offsetY="164" />
+    </image>
+    <image src="images/Filename_31.png">
+      <hotspot source="sole" offsetX="264" offsetY="166" />
+    </image>
+    <image src="images/Filename_32.png">
+      <hotspot source="sole" offsetX="244" offsetY="168" />
+    </image>
+    <image src="images/Filename_33.png">
+      <hotspot source="sole" offsetX="224" offsetY="169" />
+    </image>
+    <image src="images/Filename_34.png">
+      <hotspot source="sole" offsetX="206" offsetY="168" />
+    </image>
+    <image src="images/Filename_35.png">
+      <hotspot source="sole" offsetX="188" offsetY="167" />
+    </image>
+    <image src="images/Filename_36.png">
+      <hotspot source="sole" offsetX="170" offsetY="165" />
+    </image>
+  </images>
+</config>

@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+<title></title>
+<!-- Include these scripts / .css on your pages -->
+
+<link type="text/css" rel="stylesheet" href="imagerotator/html/css/thin.css"/>
+<script type="text/javascript" src="imagerotator/html/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="imagerotator/html/js/imagerotator.js"></script>
+
+
+<style type= "text/css">
+
+/*-- Use #content CSS to customize size, position, border, etc of your 360 view --*/
+
+#content
+{
+    margin-top      : 30px;
+    margin-left     : 70px;
+    width           : 450px;
+    height          : 370px;
+    border          : 1px dotted #dddddd;
+}
+
+#selectors
+{
+    position        : fixed;
+    top             : 30px;
+    left            : 460;
+    width           : 60px;
+    height          : 120px;
+}
+
+#selectors img
+{
+    border          : thin dotted #dddddd;
+    cursor          : pointer;
+    margin-bottom   : 5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <!--
+         Just copy / paste the content div onto your page and define its style.
+         Then set configFileURL below to point to your product configuration XML.
+    -->
+
+    <div id="content">
+
+        <div id="wr360PlayerId" class="wr360_player" style="background-color: #808080;">
+        </div>
+
+        <script language="javascript" type="text/javascript">
+
+          _imageRotator.settings.jsScriptOnly  = true;
+          _imageRotator.settings.configFileURL = "360_assets/SampleShoePNG/config.xml";
+          _imageRotator.settings.graphicsPath  = "imagerotator/html/img/thin";
+          _imageRotator.runImageRotator("wr360PlayerId");
+
+        </script>
+
+    </div>
+
+
+    <!-- Left-hand thumbnails - quick sample via fixed css positioning -->
+    <!-- On click, change background color for better visual effect and reload view via _imageRotator.reload(...) -->
+
+    <div id="selectors">
+       <img onclick="jQuery('#wr360PlayerId').css('background-color', '#808080'); _imageRotator.reload('360_assets/SampleShoePNG/config.xml');" src="360_assets/SampleShoe/thumb.jpg" alt="Click to load Pink Style"/>
+       <img onclick="jQuery('#wr360PlayerId').css('background-color', '#9EAF3A'); _imageRotator.reload('360_assets/SampleShoePNG2/config.xml');" src="360_assets/SampleShoeStill/thumb.jpg" alt="Click to load Yellow Style"/>
+       <img onclick="jQuery('#wr360PlayerId').css('background-color', '#fff');    _imageRotator.reload('360_assets/SampleShoeStill2/config.xml');" src="360_assets/SampleShoeStill2/thumb.jpg" alt="Click to load Green Style"/>
+    </div>
+
+</body>
+</html>

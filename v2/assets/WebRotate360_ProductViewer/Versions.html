@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>WebRotate 360 Product Viewer Version History</title>
+  <style type="text/css">
+
+  body
+  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px
+  }
+
+  p
+  {
+    color:#353536; letter-spacing:0px; line-height: 19px;
+
+  }
+
+  .title
+  {
+    color:#494949; letter-spacing:1px; line-height: 25px; font-family: Tahoma;
+    font-weight: bolder;
+  }
+
+  a
+  {
+    font-weight: 600;
+  }
+
+  ul { list-style:circle; }
+  </style>
+</head>
+
+<body>
+
+      <span class="title">360 Product Viewer [3.0.0 build 930] *31-May-2012</span><br/>
+      <ul>
+            <li style="color:#D90000">[+] JavaScript / HTML5 mode (JS) is completely reworked (90% rewritten) and is now used as a default.</li>
+            <li style="color:#D90000">[+] SpotEditor is completely reworked (80% rewritten). Now supports viewer theming, zooming, and a lot more.</li>
+            <li>[+] Added full hot-spot support in JS mode.</li>
+            <li>[+] Added full zooming support in JS mode.</li>
+            <li>[+] Added new hot-spot type via custom HTML content (JS only).</li>
+            <li>[+] Added new "deep zoom" feature using second image set loaded for zooming only (JS and Flash).</li>
+            <li>[+] Added support for custom hot-spot indicator images (JS only). </li>
+            <li>[+] Added new "thin" toolbar theme and new hot-spot indicators, including animated ones (JS only).</li>
+            <li>[+] Added new fixed hot-spot positioning mechanism via screen sections and margins (JS only).</li>
+            <li>[+] Reworked iPhone and iPad implementation for smooth hot-spot presentation and zooming (JS only).</li>
+            <li>[+] Added new features to enable rotation direction control, including forced single rotation direction (JS only).</li>
+            <li>[+] Added new progress indicator animation with optional progress numbers (JS only).</li>
+            <li>[+] Updated all samples to highlight latest 360 viewer capabilities (JS only).</li>
+            <li>[!] Fixed numerous issues reported from beta testing and production testing of our previous releases.</li>
+            <li>[!] Find more information in our updated user guide <a href="http://www.webrotate360.com/360_product_viewer_download/Readme.pdf">here</a></li>
+      </ul>
+
+      <span class="title">360 Product Viewer [2.5.3] *18-Jul-2011</span><br/>
+      <ul>
+            <li>[+] Revamped SpotEditor tool; added support for all configuration settings as well as Preview / Publish function.</li>
+            <li>[+] Added five new samples (Basic, Color, JS, Popup, Phone).</li>
+            <li>[+] Added support for loading image / hotspot assets from locations separate from xml config (for CDN, etc).</li>
+            <li>[+] Added API for in-place viewer reload using different xml configuration.</li>
+            <li>[+] Added API setting (flybyJsMenuFix) to fix an issue where Flash may overlap dynamic JavaScript menus.</li>
+            <li>[+] Added new type of hotspot indicator that pulsates constantly.</li>
+            <li>[+] Added urlTarget (xml) setting to allow specifying URL open mode on click inside hotspot (_blank, _self). </li>
+            <li>[+] Added xml setting (bounce) for viewing when full set of 360 images is not available (e.g., 180-degree rotation). </li>
+            <li>[+] Added two xml settings for configuring color of progress animation.</li>
+            <li>[+] Allowed hotspot popups to close on mouse click.</li>
+            <li>[+] Removed dimming of product images when activating hotspot popups.</li>
+            <li>[+] Enabled hotspot disable (xml) setting to also apply in JavaScript mode.</li>
+            <li>[+] Enabled toolbarBackAlpha (xml) setting to also apply in JavaScript mode.</li>
+            <li>[+] Enabled disableMouseControl (xml) setting to also apply in JavaScript mode.</li>
+            <li>[+] Added support for checking viewer version via Firebug.</li>
+            <li>[!] Fixed static hotspots to prevent browse action when no URL is assigned.</li>
+            <li>[!] Fixed IE security issue specific to Free edition (presented itself as a jQuery access error in IE statusbar). </li>
+            <li>[!] Fixed issue in Webkit browsers where mouse cursor would sometimes change into selection mode on click. </li>
+            <li>[!] Fixed issue in JavaScript mode where viewer was skipping on a single image during rotation via mouse dragging.</li>
+            <li>[!] Fixed issue where JavaScript mode was not letting more than one static hotspot. </li>
+            <li>[!] Updated End-User License Agreement (License.PDF).</li>
+            <li>[!] Launched our new website <a href="http://www.360-product-views.com" title="See our quick tour of key features of WebRotate 360 Product Viewer" target="_blank">360-product-views.com</a> with a quick tour of the key product features</li>
+       </ul>
+
+      <span class="title">360 Product Viewer [2.5.1] *22-Apr-2011</span><br/>
+      <ul>
+            <li>[+] Added static hotspots (fixed to coordinate).</li>
+            <li>[+] Added URL click action for all hotspots.</li>
+            <li>[+] Added configuration drag &amp; drop for SpotEditor.</li>
+            <li>[+] Added hotspot disabling UI / xml parameter &lt;hotspot disabled&gt;. </li>
+            <li>[+] Optimized mobile support to allow 100% screen stretch and orientation control.</li>
+            <li>[+] Added rotation swing support for touch enabled devices.</li>
+            <li>[+] Added flashEmbedFonts xml parameter to allow different character sets (i.e., Cyrillic).</li>
+            <li>[!] Fixed IE7 toolbar layout issue in JavaSrcipt viewer.</li>
+            <li>[!] Fixed jQuery namespacing issues for integration with third-party CMS.</li>
+            <li>[!] Fixed playback button in JavaScript viewer that wouldn't toggle on iPhone / iPad.</li>
+            <li>[!] Fixed jsScriptOnly naming.</li>
+            <li>[!] Removed spotinfo id attribute as it becomes obsolete</li>
+      </ul>
+
+      <span class="title">360 Product Viewer [2.5.0] *07-Apr-2011</span><br/>
+      <ul>
+            <li>[+] Introduced 360 JavaScript viewer for mobile devices with touch support (iPhone, iPad, Android, etc).</li>
+            <li>[+] Added Set Template button in SpotEditor to allow inheriting settings and hotspots from existing xml.</li>
+            <li>[+] Added UI / xml parameters for changing color / transparency of hotspot circle.</li>
+            <li>[+] Added UI / xml parameters for changing color / transparency of toolbar buttons.</li>
+            <li>[+] Added toolbar strip background and color / transparency configuration.</li>
+            <li>[+] Added 'once' option for &lt;rotation rotate&gt; to only go through a single loop on load.</li>
+            <li>[+] Added UI / xml parameters for customizing font height, colors and width for text hotspots.</li>
+            <li>[!] Fixed issue with toggle buttons erroneously switching state.</li>
+            <li>[!] Fixed issue where hotspot toggle button was showing when no hotspots were configured.</li>
+            <li>[!] Fixed multiple issues that prevented showing just a single image instead of a set of 360.</li>
+            <li>[!] Reorganized folders and references for more flexible deployment options.</li>
+      </ul>
+
+      <span class="title">360 Product Viewer [2.4.0] *09-Feb-2011</span><br/>
+      <ul>
+            <li>[+] Added Flash full-screen capability.</li>
+            <li>[+] Added Tool-tip support for toolbar controls.</li>
+            <li>[+] Added Flash hotspots that can be added externally as SWFs.</li>
+            <li>[+] Added Hotspot on / off toggle switch button.</li>
+            <li>[+] Added maxZoomFullScreen and fullScreenStretch xml parameters to control zooming in full screen.</li>
+            <li>[+] Added 'none' and 'first' options for &lt;preloader image&gt; to show nothing or first image during viewer preload.</li>
+            <li>[!] Fixed issue with viewer background transparency.</li>
+            <li>[!] Stopped stretching 360 images to fit the viewer on load when they are smaller than configured view.</li>
+      </ul>
+
+
+</body>
+
+</html>

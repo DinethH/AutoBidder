@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <settings>
+    <preloader image="images/Filename_34.jpg" />
+    <userInterface showZoomButtons="true" showToolTips="true" showHotspotsButton="true" showFullScreenButton="true" showTogglePlayButton="false" showArrows="false" toolbarAlign="left" toolbarBackColor="#F8F9FA" toolbarHoverColor="#808285" toolbarForeColor="#A7A9AE" toolbarBackAlpha="0.93" toolbarAlpha="0.52" flashEmbedFonts="true" progressLoopColor="#e8e8e8" progressNumColor="#949494" showProgressNumbers="true" />
+    <control dragSpeed="0.13" maxZoom="200" maxZoomFullScreen="200" fullScreenStretch="100" doubleClickZooms="true" disableMouseControl="false" reverseScroll="false" />
+    <rotation firstImage="0" rotate="false" rotatePeriod="7" rotateDirection="-1" bounce="false" forceDirection="false" />
+  </settings>
+  <hotspots>
+    <hotspot id="newitem" absolutePosition="true" className="WebRotate360.ImageRotator.StaticHotspotPresenter" offsetX="0" offsetY="0">
+      <spotinfo src="images/spots/newitem.png" />
+    </hotspot>
+    <hotspot id="spot1" absolutePosition="false" className="WebRotate360.ImageRotator.Html5HotspotPresenter" indicatorImage="spot_shape1.gif" alpha="0.8">
+      <spotinfo>
+        <cdata>
+        <![CDATA[<div style="padding:0px 6px 0px 6px; margin:0; line-height:18px; background-color:#ffffff; color: #727272; width:246px; height:206px; border:1px #eeeeee solid; font-family:verdana; font-size:12px; opacity:0.95; " >
+<img src="imagerotator/html/img/basic/infoico.png" style="position:absolute; top:5px; right:7px;"/>
+<p style="font-size:12px; font-weight:bold; color:#666666; padding:5px 0 2px 8px; margin:0; border-bottom:1px dotted #dddddd; text-transform:uppercase">Vans Type II
+</p>
+<p style="padding:2px 0px 2px 8px; margin:0; font-size:10px; border-bottom:1px dotted #dddddd">
+Classic Vans waffle traction outsole
+</p>
+<div style="text-align:center; margin:18px 0 6px 0;">
+<img src="360_assets/SampleShoeStill2/images/spots/vanssolesmall.jpg" width="214" height="103"/>
+</div>
+<div style="float:right; padding:5px"><a href="http://www.facebook.com/360views" target="_blank" style="color:#8B8B8B; text-decoration:none; font-size:11px">Learn more <span style="color:#999999">&raquo;</span></a>
+</div>
+<div style="clear:both"></div></div>]]>
+        </cdata>
+      </spotinfo>
+    </hotspot>
+    <hotspot id="spot2" absolutePosition="false" className="WebRotate360.ImageRotator.Html5HotspotPresenter" indicatorImage="spot_shape1.gif" alpha="0.8">
+      <spotinfo src="images/spots/vanssole.jpg" />
+    </hotspot>
+    <hotspot id="info" absolutePosition="true" className="WebRotate360.ImageRotator.StaticHotspotPresenter" margin="0,5,-2,0" align="bottom,right">
+      <spotinfo src="images/spots/infospot.png" />
+    </hotspot>
+  </hotspots>
+  <images highresWidth="1800" highresHeight="1187">
+    <image src="images/Filename_34.jpg">
+      <hotspot source="spot1" offsetX="84" offsetY="164" />
+      <hotspot source="spot2" offsetX="363" offsetY="147" />
+      <highres src="images/highres/Filename_34.jpg" />
+    </image>
+  </images>
+</config>

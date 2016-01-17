@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+<title></title>
+<!-- Include these scripts / .css on your pages -->
+
+<link rel="stylesheet" type="text/css" href="imagerotator/html/css/thin.css"/>
+<link rel="stylesheet" type="text/css" href="prettyPhoto/css/prettyPhoto.css"/>
+
+<script type="text/javascript" src="imagerotator/html/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="imagerotator/html/js/imagerotator.js"></script>
+<script type="text/javascript" src="prettyPhoto/js/jquery.prettyPhoto.js"></script>
+
+
+<style type="text/css">
+
+body
+{
+    font-family     : Arial;
+    font-size       : 12px;
+}
+
+/*-- Use #content CSS to customize size, position, border, etc of your 360 view --*/
+
+#content
+{
+    margin-top      : 30px;
+    margin-left     : 30px;
+    width           : 450px;
+    height          : 370px;
+    border          : 1px dotted #dddddd;
+}
+
+.product-gallery
+{
+    margin          : 0 0 0 30px;
+}
+
+.product-gallery img
+{
+    outline         : none;
+    border          : 1px dotted #dddddd;
+}
+
+.more-views
+{
+    margin          : 20px 0 0px 0;
+    padding-bottom  : 5px;
+    font-size       : 11px;
+    color           : #777777;
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <!--
+     Just copy / paste the content div onto your page and define its style.
+     Then set configFileURL below to point to your product configuration XML.
+    -->
+
+    <div id="content">
+
+        <div id="wr360PlayerId" class="wr360_player">
+        </div>
+
+        <script language="javascript" type="text/javascript">
+
+          _imageRotator.settings.jsScriptOnly  = true;
+          _imageRotator.settings.configFileURL = "360_assets/SampleShoeStill/config.xml";
+          _imageRotator.settings.graphicsPath  = "imagerotator/html/img/thin";
+          _imageRotator.settings.i18n.arrowLeftButtonTooltip = "Previous image";
+          _imageRotator.settings.i18n.arrowRightButtonTooltip = "Next image";
+
+          _imageRotator.runImageRotator("wr360PlayerId");
+
+        </script>
+
+    </div>
+
+    <!-- Setup prettyPhoto gallery / lightbox -->
+
+    <div class="product-gallery">
+        <div class="more-views">
+            <strong>MORE VIEWS</strong>
+        </div>
+        <a href="360-view-sample-popup-frame.html?iframe=true&amp;width=450&amp;height=380" rel="prettyPhoto[mixed]" title="360 product view - pink shoe"><img src="360_assets/SampleShoe/thumb.jpg" alt=""/></a>
+        <a href="360_assets/SampleShoeStill/images/yellow.jpg" rel="prettyPhoto[mixed]" title="Still image - yellow shoe"><img src="360_assets/SampleShoeStill/thumb.jpg" alt=""/></a>
+    </div>
+
+    <script type="text/javascript" charset="utf-8">
+        jQuery(document).ready(function(){
+             jQuery("a[rel^='prettyPhoto']").prettyPhoto({theme:'light_square', animation_speed: 'fast', overlay_gallery: false, show_title: true, allow_resize: false, overlay_gallery: false, social_tools: null});
+        });
+    </script>
+
+</body>
+</html>

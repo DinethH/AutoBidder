@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <settings>
+    <preloader image="images/brown.jpg" />
+    <userInterface showZoomButtons="true" showToolTips="true" showHotspotsButton="true" showFullScreenButton="true" showTogglePlayButton="true" showArrows="true" toolbarAlign="right" toolbarBackColor="#FFFFFF" toolbarHoverColor="#808285" toolbarForeColor="#A7A9AE" toolbarBackAlpha="1" toolbarAlpha="0.9" flashEmbedFonts="true" progressLoopColor="#e8e8e8" progressNumColor="#949494" showProgressNumbers="true" />
+    <control dragSpeed="0.48" maxZoom="200" maxZoomFullScreen="200" fullScreenStretch="100" doubleClickZooms="false" disableMouseControl="false" reverseScroll="false" />
+    <rotation firstImage="0" rotate="false" rotatePeriod="25" rotateDirection="-1" bounce="false" forceDirection="false" />
+  </settings>
+  <hotspots>
+    <hotspot id="spot1" absolutePosition="false" className="WebRotate360.ImageRotator.Html5HotspotPresenter" indicatorImage="spot_shape2.gif" alpha="0.8">
+      <spotinfo>
+        <cdata>
+          <![CDATA[<div style="padding:0px 6px 0px 6px; margin:0; line-height:18px; background-color:#ffffff; color: #727272; width:246px; height:206px; border:1px #eeeeee solid; font-family:verdana; font-size:12px; opacity:0.95; " >
+<img src="imagerotator/html/img/basic/infoico.png" style="position:absolute; top:5px; right:7px;"/>
+<p style="font-size:12px; font-weight:bold; color:#666666; padding:5px 0 2px 8px; margin:0; border-bottom:1px dotted #dddddd; text-transform:uppercase">Vans Type II
+</p>
+<p style="padding:2px 0px 2px 8px; margin:0; font-size:10px; border-bottom:1px dotted #dddddd">
+Classic Vans waffle traction outsole
+</p>
+<div style="text-align:center; margin:18px 0 6px 0;">
+<img src="360_assets/SampleShoeStill2/images/spots/vanssolesmall.jpg" width="214" height="103"/>
+</div>
+<div style="float:right; padding:5px"><a href="http://www.facebook.com/360views" target="_blank" style="color:#8B8B8B; text-decoration:none; font-size:11px">Learn more <span style="color:#999999">&raquo;</span></a>
+</div>
+<div style="clear:both"></div></div>]]>
+        </cdata>
+      </spotinfo>
+    </hotspot>
+    <hotspot id="spot2" absolutePosition="false" className="WebRotate360.ImageRotator.Html5HotspotPresenter" indicatorImage="spot_shape2.gif" alpha="0.8">
+        <spotinfo src="images/spots/hotspot.png" url="http://www.twitter.com/webrotate360" urlTarget="_blank" />
+    </hotspot>
+    <hotspot id="spot3" absolutePosition="false" className="WebRotate360.ImageRotator.Html5HotspotPresenter" indicatorImage="spot_shape2.gif" alpha="0.8">
+        <spotinfo txt="SIMPLE TEXT CONTENT&#xD;&#xA;&#xD;&#xA;* Use WebRotate 360 SpotEditor&#xD;&#xA;* Create a spot and add text&#xD;&#xA;* Set background color and font&#xD;&#xA;* Set rollover box width" txtWidth="200" txtBkColor="#FBFBFB" txtColor="#696A6B" fntHeight="12" />
+    </hotspot>
+  </hotspots>
+  <images highresWidth="1800" highresHeight="1188">
+    <image src="images/brown.jpg">
+      <hotspot source="spot1" offsetX="84" offsetY="210" />
+      <highres src="images/highres/brown.jpg" />
+    </image>
+    <image src="images/blue.jpg">
+      <hotspot source="spot1" offsetX="84" offsetY="210" />
+      <highres src="images/highres/blue.jpg" />
+    </image>
+    <image src="images/green.jpg">
+      <hotspot source="spot1" offsetX="84" offsetY="210" />
+      <highres src="images/highres/green.jpg" />
+    </image>
+    <image src="images/soleview.jpg">
+      <hotspot source="spot2" offsetX="119" offsetY="105" />
+      <highres src="images/highres/soleview.jpg" />
+    </image>
+    <image src="images/topview.jpg">
+      <hotspot source="spot3" offsetX="361" offsetY="126" />
+      <highres src="images/highres/topview.jpg" />
+    </image>
+  </images>
+</config>

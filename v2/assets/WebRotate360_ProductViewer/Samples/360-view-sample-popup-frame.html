@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+ 
+<head>
+<title>WebRotate 360 Product Viewer Lightbox Integration Popup</title>
+<meta name="Description" content="This page is used as an iframe popup in WebRotate 360 lightbox integration sample" />
+
+<!-- Include these scripts / .css on your pages -->
+
+<link type="text/css" rel="stylesheet" href="imagerotator/html/css/basic.css"/>
+<script type="text/javascript" src="imagerotator/html/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="imagerotator/html/js/imagerotator.js"></script>
+
+
+<style type= "text/css">
+
+/*-- Use CSS to customize size, position, border, etc of the 360 view --*/
+
+body
+{
+     margin       : 0;
+     padding      : 0;
+}
+
+#content
+{
+     width        : 450px;
+     height       : 370px;
+     margin       : 0 auto 0 auto;
+     border-bottom: thin solid #E4E4E4
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+    <!--
+         Just copy / paste the content div onto your page and define its style.
+         Then set configFileURL below to point to your product configuration XML.
+    -->
+
+    <div id="content">
+
+        <div id="wr360PlayerId" class="wr360_player">
+        </div>
+
+        <script language="javascript" type="text/javascript">
+
+          _imageRotator.settings.jsScriptOnly      = true;
+          _imageRotator.settings.configFileURL     = "360_assets/SampleShoe/config_popup.xml";
+          _imageRotator.settings.viewWidthJQFix    = 450;
+          _imageRotator.settings.viewHeightJQFix   = 370;
+          _imageRotator.settings.toolbarWidthJQFix = 158;
+          _imageRotator.settings.graphicsPath      = "imagerotator/html/img/basic";
+
+          _imageRotator.runImageRotator("wr360PlayerId");
+
+        </script>
+
+    </div>
+ 
+</body>
+ 
+</html>
